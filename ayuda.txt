@@ -1,0 +1,17 @@
+<div class="container d-flex justify-content-center">
+    <div class="row d-flex justify-content-center pt-5 col-md-4" >
+        <div class="card-body">
+            <form action="" method="post" name="frmExcelImport" id="frmExcelImport" enctype="multipart/form-data">
+                <h5 class="card-title">Archivo Excel: </h5>
+                <div class="custom-file">
+                    <input type="file" name="file" id="file" accept=".xls,.xlsx" class="custom-file-input">
+                    <label class="custom-file-label" for="inputGroupFile01">Elija Archivo</label>
+                </div>
+                <br>
+                <br>
+                <button type="submit" id="submit" name="import" class="btn btn-primary btn-submit">Importar</button>
+            </form>
+        </div>
+        <div id="response" class="<?php if (!empty($type)) {echo $type . " display-block";} ?>"><?php if (!empty($message)) {echo $message;} ?></div>
+    </div> 
+    </div>
